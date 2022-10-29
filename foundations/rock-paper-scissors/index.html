@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <input type="button" value="Rock">
+    <input type="button" value="Paper">
+    <input type="button" value="Scissors">
+    <div class="computer"></div>
+    <div class="result"></div>
+    <script>
+        const computer = document.querySelector(".computer");
+        const result = document.querySelector(".result");
+        let score = 0;
+        let computerScore = 0;
+        let round = 0;
+
+        function computerPlay () {
+            let randomInt = Math.floor(Math.random() * 3);
+            let play;
+            if (randomInt == 0) {
+                play = "Rock";
+            }
+            else if (randomInt == 1) {
+                play = "Paper";
+            }
+            else {
+                play = "Scissors";
+            }
+            return play;
+        }
+
+        function singleRound(playerSelection, computerSelection) {
+            computer.textContent = "The computer chose " + computerSelection;
+
+            if ((computerSelection === "Rock" && playerSelection === "Rock") ||
+                (computerSelection === "Paper" && playerSelection === "Paper") ||
+                (computerSelection === "Scissors" && playerSelection === "Scissors")) {
+                result.textContent = "It's a draw !";
+            }
+            else if ((computerSelection === "Rock" && playerSelection === "Scissors") ||
+                (computerSelection === "Paper" && playerSelection === "Rock") ||
+                (computerSelection === "Scissors" && playerSelection === "Paper")) {
+                result.textContent = "You loose ! " + computerSelection + " beats " + playerSelection + " !";
+                computerScore++;
+            }
+            else if ((computerSelection === "Rock" && playerSelection === "Paper") ||
+                (computerSelection === "Paper" && playerSelection === "Scissors") ||
+                (computerSelection === "Scissors" && playerSelection === "Rock")) {
+                result.textContent = "You win ! " + playerSelection + " beats " + computerSelection + " !";
+                score++;
+            }
+            else {
+                result.textContent = "Something went wrong, please refresh the page.";
+            }
+            round++;
+
+            if (round === 6 && score >= 3) {
+                result.textContent = "You win the game with a score of " + score + " !";
+                round = 0;
+                score = 0;
+                computerScore = 0;
+            } else if (round === 6 && computerScore >= 3) {
+                result.textContent = "Computer win the game with a score of " + computerScore + " !";
+                round = 0;
+                score = 0;
+                computerScore = 0;
+            } else if (round === 6) {
+                result.textContent = "Nobody wins the game, try again !";
+                round = 0;
+                score = 0;
+                computerScore = 0;
+            }
+        }
+
+        function gameStart () {
+            const buttons = document.querySelectorAll('input');
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    singleRound(button.value, computerPlay());
+                });
+            });
+        }
+        
+        gameStart();
+
+    </script>
+</body>
+</html>

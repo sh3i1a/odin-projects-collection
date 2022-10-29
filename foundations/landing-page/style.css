@@ -1,0 +1,171 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1F2937;
+    display: flex;
+    padding: 15px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    align-items: center;
+    gap: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* HERO SECTION */
+
+.first-box {
+    background-color: #1F2937;
+    display: flex;
+    padding: 70px 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-box img {
+    width: 550px;
+    height: auto;
+}
+
+.hero-text {
+    width: 480px;
+    height: auto;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.first-box p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    font-size: 18px;
+    color: #e5e7eb;
+    background-color: #3882f6;
+    border-radius: 10px;
+    border: 0px;
+    padding: 8px 35px;
+}
+
+/* SECOND SECTION*/
+
+.second-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 200px 70px 200px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900px;
+    color: #1F2937;
+    margin-bottom: 50px;
+}
+
+.small-boxes {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.small-box {
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+
+.small-box img {
+    width: auto;
+    height: 150px;
+}
+
+/* THIRD SECTION */
+
+.third-box {
+    background-color: #e5e7eb;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    padding: 70px 200px 30px 200px;
+}
+
+.third-box .author {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+/* FOURTH BOX */
+
+.fourth-box {
+    padding: 70px 200px;
+}
+
+.sign-up {
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 40px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    margin: 0px;
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.sign-up p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0px;
+}
+
+.sign-up button {
+    border: 2px solid #e5e7eb;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1F2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}

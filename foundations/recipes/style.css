@@ -1,0 +1,72 @@
+logo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: larger;
+  color: #37352f;
+}
+
+h1 {
+  text-align: center;
+  color: #37352f;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 65px;
+  font-weight: 900;
+  margin-bottom: 130px;
+}
+
+.flex-recipes {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-recipes div img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.recipe-detail {
+  display: block;
+  font-size: large;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #37352f;
+  background-color: lightgrey;
+  border-radius: 0px 0px 30px 30px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-top: -90px;
+  max-width: 300px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #37352f;
+  font-weight: 600;
+}
+
+.recipe-detail p {
+  font-size: 13px;
+  margin: 0px;
+}
+
+.author {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  background-color: #37352f;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
