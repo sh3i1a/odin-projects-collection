@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap');
+
+:root {
+    --Gray900: #101828;
+    --Gray700: #344054;
+    --Gray500: #667085;
+    --Gray300: #D0D5DD;
+
+    --Primary600: #7F56D9;
+    --Primary300: #D6BBFB;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--Gray900);
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--Primary300);
+}
+
+p:last-child {
+    font-size: 0.8rem;
+}
+
+a {
+    color: var(--Primary600);
+}
+
+.illustration {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background-color: white;
+    height: 100vh;
+}
+
+.form>p {
+    color: var(--Gray500);
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    display: flex;
+    gap: 16px;
+    border: none;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--Gray700);
+}
+
+input {
+    border: 1px solid var(--Gray300);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+button {
+    background-color: var(--Primary600);
+    color: white;
+    border: 1px solid var(--Primary600);
+    border-radius: 8px;
+    padding: 10px 18px;
+}
