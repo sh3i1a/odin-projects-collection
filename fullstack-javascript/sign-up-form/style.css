@@ -8,7 +8,8 @@
     --Gray300: #D0D5DD;
 
     --Primary600: #7F56D9;
-    --Primary300: #D6BBFB;
+    --Primary300: #B692F6;
+    --Primary200: #E9D7FE;
 }
 
 * {
@@ -105,9 +106,10 @@ button {
 
     h1 {
         font-weight: 800;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-top: 32px;
         font-family: 'Sora', sans-serif;
+        color: white;
     }
 
     .illustration {
@@ -117,6 +119,15 @@ button {
         justify-content: space-between;
         padding: 8px;
         width: 35vw;
+    }
+
+    .illustration>p {
+        z-index: 1;
+        color: white;
+    }
+
+    .illustration>p>a {
+        color: var(--Primary200);
     }
 
     img {
