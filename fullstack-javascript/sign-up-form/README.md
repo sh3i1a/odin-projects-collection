@@ -9,9 +9,11 @@ Basic responsive sign-up form. I made it as part of [The Odin Project](https://w
 ## Todo
 
 - Client side validation
-    - Required fields
-    - Names length
-    - Regex password formats
-- Style on focus input fields
-- Style valid, invalid input fields
+    - ~~Required fields~~
+    - ~~Names length~~
+    - ~~Regex password formats~~
+    - Format help message
+    - Error message
+- ~~Style on focus input fields~~
+- ~~Style valid, invalid input fields~~
 - Javascript password validation ?
