@@ -12,8 +12,8 @@ Basic responsive sign-up form. I made it as part of [The Odin Project](https://w
     - ~~Required fields~~
     - ~~Names length~~
     - ~~Regex password formats~~
-    - Format help message
-    - Error message
+    - ~~Format help message~~
+    - ~~Error message~~
 - ~~Style on focus input fields~~
 - ~~Style valid, invalid input fields~~
 - Javascript password validation ?
