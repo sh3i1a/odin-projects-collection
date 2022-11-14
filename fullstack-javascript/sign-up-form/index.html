@@ -26,11 +26,13 @@
             <fieldset>
                 <div class="inputField">
                     <label for="first-name">First name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required>
+                    <input type="text" name="first-name" id="first-name" placeholder="Enter your first name"
+                           maxlength="20" required>
                 </div>
                 <div class="inputField">
                     <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Enter your name" required>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter your name" maxlength="20"
+                           required>
                 </div>
             </fieldset>
             <fieldset>
@@ -40,17 +42,19 @@
                 </div>
                 <div class="inputField">
                     <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required>
+                    <input type="tel" name="phone" id="phone" placeholder="9999999999" maxlength="10" required>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="inputField">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="••••••••" required>
+                    <input type="password" name="password" id="password" placeholder="••••••••"
+                           pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
                 </div>
                 <div class="inputField">
                     <label for="password-c">Password confirmation</label>
-                    <input type="password" name="password-c" id="password-c" placeholder="••••••••" required>
+                    <input type="password" name="password-c" id="password-c" placeholder="••••••••"
+                           pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
                 </div>
             </fieldset>
             <button type="submit">Create account</button>
