@@ -28,7 +28,8 @@
 }
 
 body {
-    background-color: var(--Primary400);
+    background: rgb(182,146,246);
+    background: linear-gradient(177deg, rgba(182,146,246,1) 28%, rgba(233,215,254,1) 100%);
 }
 
 p:last-child {
@@ -104,14 +105,14 @@ input:focus {
     outline: none;
 }
 
-input:valid {
+input:not(:placeholder-shown):not(:focus):valid {
     border: 1px solid var(--Primary300);
     background-color: var(--Primary25);
 }
 
 input:not(:placeholder-shown):not(:focus):invalid{
     border: 1px solid var(--Error300);
-    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px var(--Error100);
+    background-color: var(--Error100);
 }
 
 button {
@@ -130,9 +131,9 @@ button {
     h1 {
         font-weight: 800;
         font-size: 2.5rem;
-        margin-top: 32px;
+        margin-top: 42px;
         font-family: 'Sora', sans-serif;
-        color: white;
+        color: var(--Primary100);
     }
 
     .illustration {
@@ -146,11 +147,6 @@ button {
 
     .illustration>p {
         z-index: 1;
-        color: white;
-    }
-
-    .illustration>p>a {
-        color: var(--Primary200);
     }
 
     img {
@@ -163,8 +159,8 @@ button {
 
     .form {
         width: 65vw;
-        border-bottom-left-radius: 32px;
-        border-top-left-radius: 32px;
+        border-bottom-left-radius: 42px;
+        border-top-left-radius: 42px;
         padding: 12%;
         justify-content: center;
         gap: 32px;
