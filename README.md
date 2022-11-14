@@ -20,3 +20,6 @@ A simple sketch tool. The second JavaScript project from TheOdinProject curricul
 Online calculator made in vanilla JavaScript. The last project of The Odin Project foundations.
 
 ## Full Stack Javascript path ⚡️
+
+**[Sign-up form](https://github.com/sheilaJava/odin-projects-collection/tree/main/fullstack-javascript/sign-up-form)**  
+Responsive sign-up form with client-side validation.
