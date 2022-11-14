@@ -8,8 +8,15 @@
     --Gray300: #D0D5DD;
 
     --Primary600: #7F56D9;
-    --Primary300: #B692F6;
+    --Primary400: #B692F6;
+    --Primary300: #D6BBFB;
     --Primary200: #E9D7FE;
+    --Primary100: #F4EBFF;
+    --Primary25: #FCFAFF;
+
+    --Error500: #F04438;
+    --Error300: #FDA29B;
+    --Error100: #FEE4E2;
 }
 
 * {
@@ -21,7 +28,7 @@
 }
 
 body {
-    background-color: var(--Primary300);
+    background-color: var(--Primary400);
 }
 
 p:last-child {
@@ -89,6 +96,25 @@ input {
     border: 1px solid var(--Gray300);
     border-radius: 8px;
     padding: 10px 14px;
+}
+
+input:focus {
+    border: 1px solid var(--Primary300);
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px var(--Primary100);
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid var(--Primary300);
+    background-color: var(--Primary25);
+}
+
+input:invalid {
+    border: 1px solid var(--Error300);
+}
+
+input:invalid:focus {
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px var(--Error100);
 }
 
 button {
