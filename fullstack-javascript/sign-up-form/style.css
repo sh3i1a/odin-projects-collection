@@ -49,9 +49,9 @@ a {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 16px;
+    padding: 4vw;
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 img {
@@ -72,6 +72,7 @@ form {
 
 fieldset {
     display: flex;
+    flex-direction: column;
     gap: 16px;
     border: none;
 }
@@ -128,6 +129,10 @@ button {
         display: flex;
     }
 
+    fieldset {
+        flex-direction: row;
+    }
+
     h1 {
         font-weight: 800;
         font-size: 2.5rem;
@@ -164,6 +169,7 @@ button {
         padding: 12%;
         justify-content: center;
         gap: 32px;
+        height: 100vh;
     }
 
     form {
