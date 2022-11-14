@@ -26,35 +26,34 @@
         <form action="">
             <fieldset>
                 <div class="inputField">
-                    <label for="first-name">First name</label>
+                    <label for="first-name">First name *</label>
                     <input type="text" name="first-name" id="first-name" placeholder="Enter your first name"
                            maxlength="20" required>
                 </div>
                 <div class="inputField">
                     <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Enter your name" maxlength="20"
-                           required>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter your name" maxlength="20">
                 </div>
             </fieldset>
             <fieldset>
                 <div class="inputField">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="inputField">
                     <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="9999999999" minlength="10" maxlength="10" pattern="^[0-9]+$" required>
+                    <input type="tel" name="phone" id="phone" placeholder="9999999999" minlength="10" maxlength="10" pattern="^[0-9]+$">
                 </div>
             </fieldset>
             <fieldset>
                 <div class="inputField">
-                    <label for="password">Password</label>
+                    <label for="password">Password *</label>
                     <input type="password" name="password" id="password" placeholder="••••••••"
                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
                     <p>At least 8 characters</p>
                 </div>
                 <div class="inputField">
-                    <label for="password-c">Password confirmation</label>
+                    <label for="password-c">Password confirmation *</label>
                     <input type="password" name="password-c" id="password-c" placeholder="••••••••"
                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
                     <p>Numbers, upper, lowercase</p>

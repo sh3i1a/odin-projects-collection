@@ -109,7 +109,7 @@ input:valid {
     background-color: var(--Primary25);
 }
 
-input:invalid {
+input:invalid{
     border: 1px solid var(--Error300);
 }
 
