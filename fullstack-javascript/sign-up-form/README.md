@@ -26,3 +26,4 @@ See the complete assignment [here](https://www.theodinproject.com/lessons/node-p
 - Fonts on Google Fonts :
     - [Inter](https://fonts.google.com/specimen/Inter?query=Inter)
     - [Sora](https://fonts.google.com/specimen/Sora?query=Sora)
+- The favicon is from [Icons 8](https://icons8.com/).
