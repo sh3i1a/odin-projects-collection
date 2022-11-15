@@ -175,6 +175,7 @@ button {
 
     form {
         gap: 32px;
+        z-index: 1;
     }
 
     button {
