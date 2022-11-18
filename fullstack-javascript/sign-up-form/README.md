@@ -24,6 +24,6 @@ See the complete assignment [here](https://www.theodinproject.com/lessons/node-p
 - I used the [Untitled UI](https://www.untitledui.com/) kit to design the input fields.
 - Illustration is from the [Saly 3D Illustration Pack](https://www.figma.com/community/file/890095002328610853) by [Alzea Arafat](https://www.instagram.com/alzearafat/).
 - Fonts on Google Fonts :
-    - [Inter](https://fonts.google.com/specimen/Inter?query=Inter)
-    - [Sora](https://fonts.google.com/specimen/Sora?query=Sora)
+    - [Inter](https://fonts.google.com/specimen/Inter?query=Inter) as a main font
+    - [Sora](https://fonts.google.com/specimen/Sora?query=Sora) for the headings
 - The favicon is from [Icons 8](https://icons8.com/).
