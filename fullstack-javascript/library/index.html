@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./library.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Library</h1>
     <form>
-        <h2>Add a book</h2>
-        <label for="title">Title</label>
-        <input id="title" type="text" required>
-        <label for="author">Author</label>
-        <input id="author" type="text" required>
-        <label for="genre">Genre</label>
-        <select id="genre" required>
-            <option value="other">Other</option>
-            <option value="fantasy" selected>Fantasy</option>
-            <option value="thriller">Thriller</option>
-            <option value="romance">Romance</option>
-            <option value="non-fiction">Non Fiction</option>
-        </select>
-        <input id="submit" type="submit" value="Submit">
+      <h2>Add a book</h2>
+      <label for="title">Title</label>
+      <input id="title" type="text" required />
+      <label for="author">Author</label>
+      <input id="author" type="text" required />
+      <label for="genre">Genre</label>
+      <select id="genre" required>
+        <option value="other">Other</option>
+        <option value="fantasy" selected>Fantasy</option>
+        <option value="thriller">Thriller</option>
+        <option value="romance">Romance</option>
+        <option value="non-fiction">Non Fiction</option>
+      </select>
+      <input id="submit" type="submit" value="Submit" />
     </form>
     <div id="books"></div>
-</body>
+  </body>
 </html>
